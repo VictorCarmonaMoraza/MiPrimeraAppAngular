@@ -1,0 +1,10 @@
+<label>Ingrese nombre categoria</label>
+<!--Añadimos un alias-->
+<!--Estructura de un combobox-->
+<select #categoria>
+  <option value="">--Seleccione--</option>
+  <option [value]="categoria.iidcategoria" *ngFor="let categoria of categorias">{{categoria.nombre}}</option>
+</select>
+<!--(categoria) es todo el objeto-->
+<input type="button" (click)="buscar(categoria)" value="Buscar" class="btn btn-primary" />
+<input type="button" (click)="limpiar(categoria)" value="Limpiar" class="btn btn-danger " />

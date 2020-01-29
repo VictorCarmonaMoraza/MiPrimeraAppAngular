@@ -1,0 +1,24 @@
+
+
+
+<table class="table table-striped">
+  <thead class="thead-dark"> 
+    <tr>
+      <th *ngFor="let cabecera of cabeceras">{{cabecera}}</th>
+    </tr>
+  </thead>
+
+  
+  <!--tbody es el contenido de la tabla-->
+  <tbody>
+    <tr *ngFor="let producto of productos" class="table-warning">
+      <td>{{producto.idproducto}}</td>
+      <td>{{producto.nombre}}</td>
+      <td>{{producto.precio}}</td>
+      <td>{{producto.stock}}</td>
+      <td>{{producto.nombreCategoria}}</td>
+    </tr>
+
+  </tbody>
+
+</table>

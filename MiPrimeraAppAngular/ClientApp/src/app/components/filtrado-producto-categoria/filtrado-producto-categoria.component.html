@@ -1,0 +1,7 @@
+<!--Este es el padre -->
+<!--Cuando se de el evento clickBuscar tenemos que invocar el metodo buscar-->
+<buscador-producto-categoria (clickBuscar)="buscar($event)" (clickLimpiar)="limpiar($event)">
+
+</buscador-producto-categoria>
+<!--Pasamos por el Input el productos que va a ser igual a la variable declarada -->
+<tabla-producto [productos]="productos"></tabla-producto>
